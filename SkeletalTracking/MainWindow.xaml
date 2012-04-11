@@ -1,16 +1,16 @@
 ﻿<Window x:Class="SkeletalTracking.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="600" Width="800" Loaded="Window_Loaded" 
+        Title="MainWindow" Height="602" Width="800" Loaded="Window_Loaded" 
         xmlns:my="clr-namespace:Microsoft.Samples.Kinect.WpfViewers;assembly=Microsoft.Samples.Kinect.WpfViewers" 
         Closing="Window_Closing" WindowState="Maximized">       
     <Canvas Name="MainCanvas">
-        <Image Canvas.Left="35" Canvas.Top="23" Height="480" Name="image" Stretch="Fill" Width="640" Source="/SkeletalTracking;component/Images/Tennis%20Court.JPG" />
+        <Image Canvas.Left="0" Canvas.Top="0" Height="561" Name="image" Stretch="Fill" Width="778" Source="/SkeletalTracking;component/Images/Tennis%20Court.JPG" />
         <my:KinectColorViewer Canvas.Left="35" Canvas.Top="21" Width="640" Height="480" Name="kinectColorViewer1" Kinect="{Binding ElementName=kinectSensorChooser1, Path=Kinect}" Visibility="Collapsed" Background="#00000000"></my:KinectColorViewer>
         <Ellipse Canvas.Left="0" Canvas.Top="0" Height="50" Name="leftEllipse"  Width="50" Fill="#FF4D298D" Opacity="1" Stroke="White" Visibility="Hidden" />
         <Image Canvas.Left="66" Canvas.Top="90" Height="87" Name="headImage" Stretch="Fill" Width="84" Source="/SkeletalTracking;component/c4f-color.png" Visibility="Hidden" />
         <my:KinectSensorChooser Canvas.Left="318" Canvas.Top="355" Name="kinectSensorChooser1" Width="328" />
-        <Ellipse Canvas.Left="405" Canvas.Top="154" Height="43" Name="ellipse1" Stroke="Black" Width="44" MinHeight="0" MinWidth="0">
+        <Ellipse Canvas.Left="166" Canvas.Top="206" Height="50" Name="ellipse1" Stroke="Black" Width="50" MinHeight="0" MinWidth="0">
             <Ellipse.Fill>
                 <ImageBrush ImageSource="/SkeletalTracking;component/Images/Ball.bmp" />
             </Ellipse.Fill>
@@ -20,6 +20,7 @@
                 <ImageBrush ImageSource="/SkeletalTracking;component/Images/forehand%20racket1.png" />
             </Rectangle.Fill>
         </Rectangle>
-        <Label Canvas.Left="383" Canvas.Top="43" Height="32" Name="label1" Width="123" Content="{Binding}" />
+        <Label Canvas.Left="385" Canvas.Top="12" Height="53" Name="label1" Width="271" Content="{Binding}" />
+        <Canvas Canvas.Left="12" Canvas.Top="12" Height="524" Name="canvas1" Width="744" />
     </Canvas>
 </Window>

@@ -98,6 +98,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\C#\ShapeGame\ShapeGame.csproj">
+      <Project>{E61846BF-FE80-4B50-A7FF-CFCD9E4A4815}</Project>
+      <Name>ShapeGame</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Dependencies\KinectWpfViewers\Microsoft.Samples.Kinect.WpfViewers.csproj">
       <Project>{4DE23893-27E7-423F-9BB6-BA21DAC2C45E}</Project>
       <Name>Microsoft.Samples.Kinect.WpfViewers</Name>
